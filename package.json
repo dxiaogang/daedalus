@@ -1,7 +1,7 @@
 {
-  "name": "common_vue",
+  "name": "daedalus",
   "version": "1.0.0",
-  "description": "this is common_vue lib",
+  "description": "this is vue2.0 project,named daedalus",
   "author": "daixiaogang <daixiaogang@beiquan.org>",
   "private": true,
   "scripts": {
