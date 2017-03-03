@@ -1,6 +1,6 @@
-# vue_common
+# Daedalus<代达罗斯之殇>
 
-> my first vue project
+> this is a project,used vue 2.x
 
 ## Build Setup
 
