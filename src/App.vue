@@ -1,14 +1,42 @@
 <template>
   <div id="app">
-    <img id="imge" src="./assets/drawable/logo.jpeg">
+    <HeaderView></HeaderView>
+    <LoadingView :show="loadingShow"></LoadingView>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import HeaderView from './components/HeaderView.vue'
+  import LoadingView from './components/LoadingView.vue'
+  import { mapState } from 'vuex'
+
+  export default {
+    name: 'app',
+    components: {
+      HeaderView,
+      LoadingView
+    },
+    data() {
+      return {
+        firstShow: true,
+        show: false
+      }
+    },
+    computed: {
+      ...mapState([
+        'loadingShow'
+      ])
+    },
+    methods: {
+      isShow() {
+        this.show = !this.show
+      },
+      hideDetail() {
+        this.detailShow = false
+      }
+    }
+  }
 </script>
 
 <style >
